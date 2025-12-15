@@ -110,3 +110,19 @@ Berdasarkan pengujian menggunakan metode **Black Box Testing**, sistem ini berha
 
 Proyek ini dikembangkan untuk keperluan akademik dan internal UKM Satria Bima Wash.
 
+---
+
+## 📸 Dokumentasi Antarmuka (UI)
+Sistem ini dirancang dengan antarmuka yang intuitif untuk memudahkan pengelolaan operasional harian:
+
+| Login Page | Dashboard Utama |
+|---|---|
+| ![Login](img/Login%20Page.png) | ![Dashboard](img/Dashboard%20Utama.png) |
+
+| Transaksi Jasa | Absensi Karyawan |
+|---|---|
+| ![Transaksi](img/Halaman%20Transaksi%20Jasa%20Pencucian%20Kendaraan.png) | ![Absensi](img/Halaman%20Absensi%20Karyawan.png) |
+
+| Perhitungan Upah | Laporan Penggajian |
+|---|---|
+| ![Upah](img/Halaman%20Perhitungan%20Upah%20Harian%20Karyawan.png) | ![Laporan](img/Halaman%20Laporan%20Penggajian%20Karyawan.png) |
