@@ -1,0 +1,181 @@
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #224abe;
+    --bg-color: #f8f9fc;
+    --shadow-color: #3a3b4526;
+    --text-color-primary: #fff;
+    --text-color-secondary: #858796;
+    --hover-color: #ffffff1a;
+    --divider-color: #ffffff26;
+    --tooltip-bg-color: #333;
+}
+body {
+    background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+.d-flex {
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, var(--primary-color) 10%, var(--secondary-color) 100%);
+    color: var(--text-color-primary);
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0.15rem 1.75rem 0 var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.sidebar a {
+    color: var(--text-color-primary);
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+    transition: all 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.sidebar a:hover {
+    color: var(--text-color-primary);
+    background: var(--hover-color);
+    transform: translateX(5px);
+}
+.accordion-header {
+    margin-left: 10px;
+}
+.accordion-button {
+    color: var(--text-color-primary);
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--text-color-primary) !important;
+    background-color: transparent;
+}
+.accordion-button::after {
+    color: var(--text-color-primary) !important;
+}
+.accordion-button:not(.collapsed)::after {
+    color: var(--text-color-primary) !important;
+}
+.accordion-body a {
+    color: var(--text-color-primary);
+    text-decoration: none;
+    display: block;
+    padding: 6px 16px;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+.accordion-body a:hover {
+    color: var(--text-color-primary);
+    background: var(--hover-color);
+    transform: translateX(5px);
+}
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+.welcome-section {
+    background: var(--text-color-primary);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0.15rem 1.75rem 0 var(--shadow-color);
+}
+.welcome-section h2 {
+    color: var(--secondary-color);
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.15rem 1.75rem 0 var(--shadow-color);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-header {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color-primary);
+    border-radius: 10px 10px 0 0 !important;
+    padding: 15px;
+    font-weight: 600;
+}
+.card-body {
+    padding: 25px;
+}
+.fs-1 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.text-muted {
+    color: var(--text-color-secondary) !important;
+}
+.logo-text {
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.nav-divider {
+    border-top: 1px solid var(--divider-color);
+    margin: 10px 0;
+}
+.tooltip-action {
+    position: relative;
+}
+.tooltip-action:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: var(--tooltip-bg-color);
+    color: var(--text-color-primary);
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.tooltip-action:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+.small-table {
+    font-size: 0.9rem;
+    margin: 0;
+}
+.small-table th, .small-table td {
+    padding: 0;
+    vertical-align: middle;
+}
+.small-table th {
+    font-weight: 500;
+    text-align: center;
+}
+.small-table td {
+    text-align: center;
+}
+/* .menu-header {
+    padding: 8px 12px;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.sidebar a.sub-menu-item {
+    padding-left: 24px;
+    font-size: 13px;
+} */
